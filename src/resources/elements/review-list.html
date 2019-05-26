@@ -1,0 +1,23 @@
+<template>
+  <h3 class="ui dividing header">Reviews</h3>
+  <table class="ui celled table segment">
+    <thead>
+    <tr>
+      <th>Review Name</th>
+      <th>Review Details</th>
+      <th>Review Rating</th>
+      <th>Island</th>
+      <th>Member</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr repeat.for="review of reviews">
+      <td> ${review.reviewName}</td>
+      <td> ${review.reviewDetails}</td>
+      <td> ${review.rating}</td>
+      <td> ${review.point.name}</td>
+      <td> ${review.member.firstName}, ${review.member.lastName}
+    </tr>
+    </tbody>
+  </table>
+</template>
